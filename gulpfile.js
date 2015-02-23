@@ -1,9 +1,9 @@
-var gulp = require('gulp'),
-    open = require('gulp-open'),
-    concat = require('gulp-concat'),
-    connect = require('gulp-connect'),
+var gulp       = require('gulp'),
+    open       = require('gulp-open'),
+    concat     = require('gulp-concat'),
+    connect    = require('gulp-connect'),
     browserify = require('gulp-browserify'),
-    port = process.env.port || 3000;
+    port       = process.env.port || 3000;
 
 gulp.task('browserify', function () {
     gulp.src('./src/components/main.jsx')
@@ -22,9 +22,9 @@ gulp.task('open', function () {
 
 gulp.task('connect', function () {
     connect.server({
-        root        : 'build',
-        port        : port,
-        livereload  : true
+        root       : 'build',
+        port       : port,
+        livereload : true
     });
 });
 
@@ -40,7 +40,7 @@ gulp.task('html', function () {
 
 gulp.task('watch', function () {
     gulp.watch('./build/js/*.js',   ['js']);
-    gulp.wathc('./build/*.html',    ['html']);
+    gulp.watch('./build/*.html',    ['html']);
     gulp.watch('./src/components/*.jsx', ['browserify']);
 });
 
