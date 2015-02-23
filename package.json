@@ -1,0 +1,31 @@
+{
+  "name": "react_intro",
+  "version": "1.0.0",
+  "description": "React.js intro",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r3nya/react_intro.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Andrey M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r3nya/react_intro/issues"
+  },
+  "homepage": "https://github.com/r3nya/react_intro",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-open": "^0.3.2",
+    "gulp-react": "^2.0.0",
+    "react": "^0.12.2",
+    "reactify": "^1.0.0"
+  }
+}
